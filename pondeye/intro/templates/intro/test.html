@@ -1,0 +1,23 @@
+{% load static from staticfiles %}
+<!doctype html>
+<html>
+<head> 
+<link rel ="stylesheet" href="{% static 'assets/css/layout.css' %}">
+<Title> Welcome </Title>
+</head>
+
+<h1> Welcome <h1>
+<body>
+
+<div class="container">
+{%block content %}
+ Hello Welcome to Pondeye
+ {% endblock %}
+ </div>
+ 
+ </body>
+
+
+
+
+</html>

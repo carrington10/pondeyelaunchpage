@@ -1,0 +1,28 @@
+{% load static from staticfiles %}
+<!doctype html>
+<html>
+<head>
+<link rel ="stylesheet" href="{% static 'css/layout.css' %}">
+
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+<Title> Welcome </Title>
+</head>
+
+<h1> Welcome To Pondeye <h1>
+<body>
+
+<div class="container">
+{%block content %}
+  {% endblock %}
+ </div>
+ <div class="fullscreen-bg">
+   <video autoplay loop muted poster="{% static 'images/fruit.jpg' %}" id="background">
+     <source src="{% static 'videos/City.MP4' %}" type="video/mp4">
+</div>
+ </body>
+
+
+
+
+</html>
