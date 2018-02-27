@@ -1,0 +1,80 @@
+ body{
+
+    background-image: url("images/fruit.jpg") ;
+
+ }
+
+* { padding: 0; margin: 0; }
+
+h1  {
+    color: #FFFFFF;
+    font-family: 'Lobster';
+}
+
+.container{
+
+     color:#008080;
+     font-family: 'Lobster';
+
+}
+
+#wrapper {
+ margin: 0 auto;
+ width: 922px;
+}
+#header {
+ color: #333;
+ width: 900px;
+ float: left;
+ padding: 10px;
+ border: 1px solid #ccc;
+ height: 100px;
+ margin: 10px 0px 0px 0px;
+ background-color:#F3F2ED;
+}
+#leftcolumn {
+ color: #333;
+ border: 1px solid #ccc;
+ background:#F6F0E0;
+ margin: 0px 0px 0px 0px;
+ padding: 10px;
+ height: 350px;
+ width: 200px;
+ float: left;
+}
+#content {
+ float: left;
+ color: #333;
+ border: 1px solid #ccc;
+ background:#CCC8B3;
+ margin: 0px 0px 0px 0px;
+ padding: 10px;
+ height: 350px;
+ width: 456px;
+ display: inline;
+}
+#rightcolumn {
+ color: #333;
+ border: 1px solid #ccc;
+ background:#F6F0E0;
+ margin: 0px 0px 0px 0px;
+ padding: 10px;
+ height: 350px;
+ width: 200px;
+ float: left;
+ position: relative;
+}
+
+#background {
+   display:none;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   z-index: -100;
+   -webkit-transform: translateX(-50% translateY(-50%;
+   transform: translateX(-50% translateY(-50%;
+}	

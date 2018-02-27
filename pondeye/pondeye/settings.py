@@ -25,7 +25,7 @@ SECRET_KEY = '_l56au%#(zp$mzv(g4%)03z$i)!_(knfp!bi31%87*-w)rvrmb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['carrington10.pythonanywhere.com',]
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'pondeye.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['templates','pondeyelaunchpage/pondeye/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,10 +76,14 @@ WSGI_APPLICATION = 'pondeye.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+  'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'carrington10$emailcoming',
+        'USER': 'carrington10',
+        'PASSWORD': 'kidko103',
+        'HOST':'carrington10.mysql.pythonanywhere-services.com',
     }
+
 }
 
 
@@ -124,3 +128,4 @@ STATICFILES_DIRS = (
 os.path.join(BASE_DIR,'assets'),
 
 )
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
