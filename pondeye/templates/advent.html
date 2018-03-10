@@ -20,11 +20,15 @@
    <link rel="stylesheet" href="{% static 'css/main.css' %}">
    <link rel="stylesheet" href="{% static 'css/base.css'  %}">
    <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
-
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
 
    <!-- Modernizr
    =================================================== -->
    <script src="{% static 'js/modernizr.js' %}"></script>
+   <script src="{% static 'js/circle.js' %}"></script>
+
+
 
    <!-- Favicons
    =================================================== -->
@@ -43,13 +47,24 @@
       <main class="row">
             <header class="site-header">
                <div class="logo">
-               	<a href="index.html">Pondeye.</a>
+               	<a href="advent.html"> Pondeye.</a>
                </div>
             </header>
-            <div id="main-content" class="twelve columns">
-               <h1>Pondeye</h1>
-               <p>An app that lets you show how ideas become a reality!</p>
-            <hr>
+
+            <div id="title">
+               <h1>
+                 Pondeye</h1>
+             </div>
+               <div class="container">
+
+                   </p>
+                 </p>
+                 </P>
+                 <p>
+                   >> An app that brings your ideas to life! <<
+                 </p>
+
+     </div>
 
           <!-- This is a comment  <div id="counter" class="group">
                   <span>134 <em>days</em></span>
@@ -67,8 +82,9 @@
 
                      <input type="submit" value="GetNotified" name="subscribe" class="button">
                      <label for="mce-EMAIL" class="subscribe-message"></label>
-                     <p><h2 style="color: black;">
-                       Coming Soon!
+                     <p><h2>
+                       Coming
+                       Soon!
                        </h2>
                      </p>
 
@@ -85,8 +101,8 @@
 
    </div><!-- /content-wrap -->
    <div class="fullscreen-bg">
-     <video autoplay loop muted poster="{% static 'assets/images/fruit.jpg' %}" id="background">
-       <source src="{% static 'assets/videos/mt.mp4' %}" type="video/mp4">
+     <video autoplay loop muted poster="{% static 'images/fruit.jpg' %}" id="background">
+       <source src="{% static '\assets\videos\mt.mp4' %}" type="video/mp4">
    </div>
    <!-- modals
    =================================================== -->
